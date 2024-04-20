@@ -1,5 +1,5 @@
 # codeigniter4-master
- codeigniter4 php 8
+ codeigniter 4.5.1 php 8
 
 Install:
 composer create-project codeigniter4/appstarter myapp
