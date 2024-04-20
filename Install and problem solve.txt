@@ -1,0 +1,23 @@
+# codeigniter4-master
+ codeigniter4 php 8
+
+Install:
+composer create-project codeigniter4/appstarter myapp
+
+setup database app/Config/Database.php
+
+
+
+
+Problem 1:
+    - codeigniter4/framework[4.0.0, ..., v4.5.1] require ext-intl * -> it is missing from your system. Install or enable PHP's intl extension.
+    - Root composer.json requires codeigniter4/framework ^4.0 -> satisfiable by codeigniter4/framework[4.0.0, ..., v4.5.1].
+
+To enable extensions, verify that they are enabled in your .ini files:
+    - C:\xampp\php\php.ini
+You can also run `php --ini` in a terminal to see which files are used by PHP in CLI mode.
+Alternatively, you can run Composer with `--ignore-platform-req=ext-intl` to temporarily ignore these required extensions.
+
+solve:
+;extension=intl --> extension=intl pada php.ini
+
